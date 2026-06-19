@@ -1,0 +1,16 @@
+numpy
+pandas
+matplotlib
+plotly
+scikit-learn
+xgboost
+torch
+astropy
+sunpy
+scipy
+streamlit
+fastapi
+uvicorn
+shap
+imbalanced-learn
+jupyter
