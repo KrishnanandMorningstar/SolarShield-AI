@@ -144,11 +144,12 @@ Alert Generation
 
 This project is being developed as part of the Bharatiya Antariksh Hackathon 2026.
 
-Lead Developer:
-Krishnanand Sharma
+>Krishnanand (Lead + Research)
 
-Research Interests:
-Astrophysics • Space Weather • Artificial Intelligence • Data Science
+>Shambhavi (ML Engineer)
+
+>Khushi (Python + Data Processing)
+
 
 ---
 
