@@ -46,7 +46,33 @@ The objective of this project is to develop an AI-based automated pipeline that 
 ---
 
 ## 🏗️ System Architecture
-
+                 Aditya-L1 Data
+           (SoLEXS + HEL1OS)
+                       │
+                       ▼
+              Data Collection
+                       │
+                       ▼
+              Data Processing
+      (Cleaning + Synchronization)
+                       │
+                       ▼
+            Feature Engineering
+                       │
+                       ▼
+             ML Prediction Model
+                       │
+             ┌─────────┴─────────┐
+             ▼                   ▼
+       Flare Detection      Flare Forecast
+       (Nowcasting)         (Forecasting)
+             │                   │
+             └─────────┬─────────┘
+                       ▼
+                 Alert System
+                       │
+                       ▼
+             Dashboard & Reports
 ---
 
 ## 🛠️ Tech Stack
