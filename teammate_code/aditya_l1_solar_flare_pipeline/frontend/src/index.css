@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-space-950 text-slate-200 font-sans antialiased;
+    background-image:
+      radial-gradient(1200px 600px at 12% -10%, rgba(63, 189, 240, 0.10), transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(169, 139, 245, 0.10), transparent 55%);
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-space-600 rounded-full;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-xl border border-white/5 bg-space-850/70 shadow-panel backdrop-blur-sm;
+  }
+  .panel-head {
+    @apply flex items-center justify-between gap-3 border-b border-white/5 px-4 py-3;
+  }
+  .panel-title {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-slate-400;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-white/10 px-2.5 py-1 text-[11px] font-medium;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-white/10 bg-space-700/70 px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-space-600 disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-primary {
+    @apply border-sxr/40 bg-sxr/15 text-sxr hover:bg-sxr/25;
+  }
+  .btn-danger {
+    @apply border-danger/40 bg-danger/15 text-danger hover:bg-danger/25;
+  }
+  .stat-value {
+    @apply font-mono text-2xl font-semibold tabular-nums text-white;
+  }
+  .stat-label {
+    @apply text-[11px] font-medium uppercase tracking-wider text-slate-400;
+  }
+  .table-cell {
+    @apply px-3 py-2 text-left align-middle;
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.local
+.vite/
+# Local-only corporate CA bundle / npm log (do not commit)
+corp-ca-bundle.pem
+npm-install.log
